@@ -1,6 +1,6 @@
 // 그래프 컴포넌트
 import React from "react";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, Text } from "react-native";
 import Svg, { Path } from "react-native-svg";
 
 const GraphComponent = ({ dataPoints }) => {
@@ -27,7 +27,7 @@ const GraphComponent = ({ dataPoints }) => {
       <Svg style={StyleSheet.absoluteFill}>
         <Path
           d={`M0 100 ${graphPath} L100 100`}
-          fill="none"
+          fill="rgba(116, 115, 108, 0.15)"
           stroke="rgba(5, 3, 0, 0.54)"
           strokeWidth={2}
         />

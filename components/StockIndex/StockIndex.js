@@ -9,10 +9,10 @@ import china from "../../assets/image/china.png";
 
 const ContentSwitcher = () => {
   const [selectedButton, setSelectedButton] = useState("국내");
-  const dataPoints1 = [10, 30, 15, 25, 40, 20, 35];
-  const dataPoints2 = [15, 20, 30, 40, 35, 25, 30];
-  const dataPoints3 = [25, 40, 20, 30, 45, 15, 30];
-  const dataPoints4 = [30, 45, 25, 40, 50, 40, 40];
+  const dataPoints1 = [10, 30, 40, 25, 40, 20, 35];
+  const dataPoints2 = [10, 20, 30, 40, 35, 25, 30];
+  const dataPoints3 = [10, 40, 20, 30, 45, 15, 30];
+  const dataPoints4 = [10, 45, 25, 40, 50, 40, 40];
 
   const handleButtonPress = (button) => {
     setSelectedButton(button);

@@ -32,6 +32,7 @@ const StockChart = ({ data }) => {
         width={310}
         height={280}
         chartConfig={chartConfig}
+        withDots={false} 
         bezier
       />
     </View>

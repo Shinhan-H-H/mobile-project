@@ -8,7 +8,7 @@ import menu4 from '../../assets/image/menu4.png';
 
 // 하단바 컴포넌트
 const Bar = () => {
-  const [selectedMenu, setSelectedMenu] = useState("home"); // Initial selection
+  const [selectedMenu, setSelectedMenu] = useState("home"); 
 
   const handleMenuPress = (menu) => {
     setSelectedMenu(menu);

@@ -3,14 +3,17 @@ import { StyleSheet, Text, View, TouchableOpacity, Linking } from "react-native"
 import styles from "./styled.js";
 import * as Animatable from "react-native-animatable";
 
-
+// 뉴스 컴포넌트
 const NewsBox = ({ text, link }) => {
+
+  // 링크 연결
   const handlePress = () => {
     Linking.openURL(link);
   };
 
   return (
     <TouchableOpacity onPress={handlePress}>
+      {/* 애니메이션 */}
       <Animatable.View
         style={styles.newsBox}
         animation={{
@@ -28,7 +31,6 @@ const NewsBox = ({ text, link }) => {
   );
 };
 
-// 뉴스 컴포넌트
 const News = () => {
   const newsItems = [
     { text: "#동전주", link: "https://news.google.com/search?q=%EB%8F%99%EC%A0%84%EC%A3%BC&hl=ko&gl=KR&ceid=KR%3Ako" },

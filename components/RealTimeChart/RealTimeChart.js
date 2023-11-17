@@ -125,7 +125,6 @@ const RealTimeChart = () => {
               <Text style={styles.close}>닫기</Text>
             </TouchableOpacity>
             
-            {/* 주식 목록 렌더링 */}
             {selectedStock && (
               <View>
                 <Text style={styles.topText}>{selectedStock.name}</Text>

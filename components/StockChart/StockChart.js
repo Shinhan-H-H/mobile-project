@@ -2,15 +2,16 @@ import React from "react";
 import { View, Text } from "react-native";
 import { LineChart } from "react-native-chart-kit";
 
+// 주식 리스트 클릭 시에 차트 컴포넌트
 const StockChart = ({ data }) => {
   const chartConfig = {
     backgroundGradientFrom: "#fff",
     backgroundGradientTo: "#fff",
-    color: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
+    fillShadowGradient: "#FFBE00", 
     strokeWidth: 2,
     decimalPlaces: 0,
+    color: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
     formatYLabel: (value) => value.toFixed(0),
-    fillShadowGradient: "#FFBE00", 
   };
 
   const chartData = [

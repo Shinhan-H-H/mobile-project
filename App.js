@@ -13,8 +13,9 @@ import Footer from "./components/Footer/Footer.js";
 function App() {
   return (
     <View style={styles.container}>
-      <Header />
+        <Header />
         <TopMenu />
+
         <ScrollView contentContainerStyle={styles.scrollViewContainer} showsVerticalScrollIndicator={false}>
           <StockIndex />
           <Interested />
@@ -22,6 +23,7 @@ function App() {
           <News />
           <Footer />
         </ScrollView>
+        
         <Bar />
     </View>
   );

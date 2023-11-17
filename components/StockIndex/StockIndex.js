@@ -6,6 +6,7 @@ import StockBox from "./StockBox";
 import korea from "../../assets/image/korea.png";
 import us from "../../assets/image/us.png";
 import china from "../../assets/image/china.png";
+import styles from "./styled";
 
 const ContentSwitcher = () => {
   const [selectedButton, setSelectedButton] = useState("국내");
@@ -91,42 +92,6 @@ const ContentSwitcher = () => {
   );
 };
 
-//스타일 코드
-const styles = StyleSheet.create({
-  container: {
-    padding: 10,
-    width: "98%",
-    height: 250,
-    justifyContent: "center",
-  },
-  buttonContainer: {
-    flexDirection: "row",
-  },
-  button: {
-    padding: 10,
-    borderRadius: 5,
-  },
-  selectedButton: {
-    backgroundColor: "rgba(5, 3, 0, 0.54)",
-  },
-  buttonText: {
-    color: "black",
-  },
-  selectedButtonText: {
-    color: "white",
-  },
-  contentContainer: {
-    height: "80%",
-    borderRadius: 10,
-    flexDirection: "row",
-    justifyContent: "center", // 자식 요소를 양쪽 끝으로 정렬
-    alignItems: "center",
-  },
-  stockBoxContainer: {
-    flexDirection: "row",
-    justifyContent: "center", // 가운데 정렬 추가
-    alignItems: "center", // 가운데 정렬 추가
-  },
-});
+
 
 export default ContentSwitcher;
